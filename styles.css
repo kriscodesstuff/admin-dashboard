@@ -1,3 +1,54 @@
 body{
+    padding: 0;
+    margin: 0;
     background-color: blue;
+    display: grid;
+    grid-template: 
+    1fr 1fr 1fr 1fr /1fr
+    1fr 1fr 1fr;
+    grid-template-areas:
+    "nav header-content header-content header-content"
+    "nav main main main"
+    "nav main main main"
+    "nav main main main"
 }
+
+img{
+    width: 20px;
+}
+
+ul{
+    list-style: none;
+    font-weight: bold;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+nav{
+    grid-area: nav;
+    color: white;
+    padding: 20px;
+    background-color: rgb(62, 140, 204);
+  }
+
+nav h1{
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.header-content{
+    grid-area: header-content;
+}
+
+main{
+    grid-area: main;
+}
+
+.first-ul{
+    margin-bottom: 50px;
+}
+
